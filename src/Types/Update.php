@@ -43,6 +43,7 @@ class Update extends BaseType implements TypeInterface
         'pre_checkout_query' => PreCheckoutQuery::class,
         'poll_answer' => PollAnswer::class,
         'poll' => Poll::class,
+        'my_chat_member' => ChatMemberUpdated::class,
     ];
 
     /**
@@ -78,6 +79,10 @@ class Update extends BaseType implements TypeInterface
      */
     protected $chatMemberUpdated;
 
+    /**
+     * @var ChatMemberUpdated
+     */
+    protected $myChatMember;
 
     /**
      * Optional. New version of a message that is known to the bot and was edited
@@ -353,5 +358,18 @@ class Update extends BaseType implements TypeInterface
     public function setPreCheckoutQuery($preCheckoutQuery)
     {
         $this->preCheckoutQuery = $preCheckoutQuery;
+    }
+
+    /**
+     * @param int $chatMember
+     */
+    public function setMyChatMember($chatMember)
+    {
+        $this->myChatMember = $chatMember;
+    }
+
+    public function getMyChatMember()
+    {
+        return $this->myChatMember;
     }
 }
