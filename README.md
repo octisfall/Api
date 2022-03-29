@@ -22,7 +22,7 @@ To learn how to create and set up a bot, please consult [Introduction to Bots](h
 Via Composer
 
 ``` bash
-$ composer require telegram-bot/api
+$ composer require octisfall/api
 ```
 
 ## Usage
