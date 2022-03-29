@@ -1,5 +1,5 @@
 {
-    "name": "telegram-bot/api",
+    "name": "octisfall/telegram-bot-api",
     "description": "PHP Wrapper for Telegram Bot API",
     "keywords": [
         "php",
