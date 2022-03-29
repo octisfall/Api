@@ -1,8 +1,8 @@
 <?php
 
-namespace TelegramBot\Api\Types;
+namespace Octisfall\TelegramBot\Api\Types;
 
-use TelegramBot\Api\BaseType;
+use Octisfall\TelegramBot\Api\BaseType;
 
 class ChatPhoto extends BaseType
 {

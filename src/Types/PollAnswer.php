@@ -1,8 +1,8 @@
 <?php
 
-namespace TelegramBot\Api\Types;
+namespace Octisfall\TelegramBot\Api\Types;
 
-use TelegramBot\Api\BaseType;
+use Octisfall\TelegramBot\Api\BaseType;
 
 /**
  * Class PollAnswer
@@ -12,7 +12,7 @@ use TelegramBot\Api\BaseType;
  * This object represents an answer of a user in a non-anonymous poll.
  *
  *
- * @package TelegramBot\Api\Types
+ * @package Octisfall\TelegramBot\Api\Types
  */
 class PollAnswer extends BaseType
 {
@@ -35,7 +35,7 @@ class PollAnswer extends BaseType
     ];
 
     /**
-     * @var \TelegramBot\Api\Types\User
+     * @var \Octisfall\TelegramBot\Api\Types\User
      */
     protected $user;
 

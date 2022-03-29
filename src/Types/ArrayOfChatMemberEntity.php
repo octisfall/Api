@@ -1,6 +1,6 @@
 <?php
 
-namespace TelegramBot\Api\Types;
+namespace Octisfall\TelegramBot\Api\Types;
 
 abstract class ArrayOfChatMemberEntity
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace TelegramBot\Api;
+namespace Octisfall\TelegramBot\Api;
 
-use TelegramBot\Api\Types\Message;
+use Octisfall\TelegramBot\Api\Types\Message;
 
 class Botan
 {
@@ -51,11 +51,11 @@ class Botan
     /**
      * Event tracking
      *
-     * @param \TelegramBot\Api\Types\Message $message
+     * @param \Octisfall\TelegramBot\Api\Types\Message $message
      * @param string $eventName
      *
-     * @throws \TelegramBot\Api\Exception
-     * @throws \TelegramBot\Api\HttpException
+     * @throws \Octisfall\TelegramBot\Api\Exception
+     * @throws \Octisfall\TelegramBot\Api\HttpException
      */
     public function track(Message $message, $eventName = 'Message')
     {

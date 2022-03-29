@@ -1,7 +1,7 @@
 <?php
-namespace TelegramBot\Api\Test;
+namespace Octisfall\TelegramBot\Api\Test;
 
-use TelegramBot\Api\Types\Voice;
+use Octisfall\TelegramBot\Api\Types\Voice;
 
 class VoiceTest extends \PHPUnit_Framework_TestCase
 {
@@ -84,7 +84,7 @@ class VoiceTest extends \PHPUnit_Framework_TestCase
             'mime_type' => 'audio/mp3',
             'file_size' => 3
         ));
-        $this->assertInstanceOf('\TelegramBot\Api\Types\Voice', $item);
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\Voice', $item);
         $this->assertAttributeEquals('testFileId1', 'fileId', $item);
         $this->assertAttributeEquals('testFileUniqueId1', 'fileUniqueId', $item);
         $this->assertAttributeEquals(1, 'duration', $item);
@@ -93,7 +93,7 @@ class VoiceTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \TelegramBot\Api\InvalidArgumentException
+     * @expectedException \Octisfall\TelegramBot\Api\InvalidArgumentException
      */
     public function testFromResponseException()
     {
@@ -104,7 +104,7 @@ class VoiceTest extends \PHPUnit_Framework_TestCase
         ));
     }
     /**
-     * @expectedException \TelegramBot\Api\InvalidArgumentException
+     * @expectedException \Octisfall\TelegramBot\Api\InvalidArgumentException
      */
     public function testFromResponseException2()
     {
@@ -116,7 +116,7 @@ class VoiceTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \TelegramBot\Api\InvalidArgumentException
+     * @expectedException \Octisfall\TelegramBot\Api\InvalidArgumentException
      */
     public function testSetDurationException()
     {
@@ -124,7 +124,7 @@ class VoiceTest extends \PHPUnit_Framework_TestCase
         $item->setDuration('s');
     }
     /**
-     * @expectedException \TelegramBot\Api\InvalidArgumentException
+     * @expectedException \Octisfall\TelegramBot\Api\InvalidArgumentException
      */
     public function testSetFileSizeException()
     {

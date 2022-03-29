@@ -1,14 +1,14 @@
 <?php
 
-namespace TelegramBot\Api\Types;
+namespace Octisfall\TelegramBot\Api\Types;
 
-use TelegramBot\Api\BaseType;
+use Octisfall\TelegramBot\Api\BaseType;
 
 /**
  * Class ChatJoinRequest
  * Represents a join request sent to a chat.
  *
- * @package TelegramBot\Api\Types
+ * @package Octisfall\TelegramBot\Api\Types
  */
 class ChatJoinRequest extends BaseType
 {

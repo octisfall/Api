@@ -1,15 +1,15 @@
 <?php
 
-namespace TelegramBot\Api\Types\InputMedia;
+namespace Octisfall\TelegramBot\Api\Types\InputMedia;
 
-use TelegramBot\Api\BaseType;
-use TelegramBot\Api\Collection\CollectionItemInterface;
+use Octisfall\TelegramBot\Api\BaseType;
+use Octisfall\TelegramBot\Api\Collection\CollectionItemInterface;
 
 /**
  * Class InputMedia
  * This object represents the content of a media message to be sent.
  *
- * @package TelegramBot\Api
+ * @package Octisfall\TelegramBot\Api
  */
 class InputMedia extends BaseType implements CollectionItemInterface
 {

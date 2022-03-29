@@ -1,9 +1,9 @@
 <?php
 
-namespace TelegramBot\Api\Test;
+namespace Octisfall\TelegramBot\Api\Test;
 
-use TelegramBot\Api\Types\ChatLocation;
-use TelegramBot\Api\Types\Location;
+use Octisfall\TelegramBot\Api\Types\ChatLocation;
+use Octisfall\TelegramBot\Api\Types\Location;
 
 class ChatLocationTest extends \PHPUnit_Framework_TestCase
 {
@@ -39,7 +39,7 @@ class ChatLocationTest extends \PHPUnit_Framework_TestCase
                 'address' => 'Wall St. 123'
             ]
         );
-        $this->assertInstanceOf('\TelegramBot\Api\Types\ChatLocation', $chatLocation);
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\ChatLocation', $chatLocation);
         $this->assertAttributeEquals('Wall St. 123', 'address', $chatLocation);
     }
 }

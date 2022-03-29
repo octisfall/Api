@@ -1,10 +1,10 @@
 <?php
 
-namespace TelegramBot\Api\Types;
+namespace Octisfall\TelegramBot\Api\Types;
 
-use TelegramBot\Api\BaseType;
-use TelegramBot\Api\InvalidArgumentException;
-use TelegramBot\Api\TypeInterface;
+use Octisfall\TelegramBot\Api\BaseType;
+use Octisfall\TelegramBot\Api\InvalidArgumentException;
+use Octisfall\TelegramBot\Api\TypeInterface;
 
 /**
  * Class File
@@ -13,7 +13,7 @@ use TelegramBot\Api\TypeInterface;
  * It is guaranteed that the link will be valid for at least 1 hour.
  * When the link expires, a new one can be requested by calling getFile.
  *
- * @package TelegramBot\Api\Types
+ * @package Octisfall\TelegramBot\Api\Types
  */
 class File extends BaseType implements TypeInterface
 {

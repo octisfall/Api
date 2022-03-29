@@ -1,8 +1,8 @@
 <?php
 
-namespace TelegramBot\Api\Test;
+namespace Octisfall\TelegramBot\Api\Test;
 
-use TelegramBot\Api\Types\ReplyKeyboardMarkup;
+use Octisfall\TelegramBot\Api\Types\ReplyKeyboardMarkup;
 
 class ReplyKeyboardMarkupTest extends \PHPUnit_Framework_TestCase
 {

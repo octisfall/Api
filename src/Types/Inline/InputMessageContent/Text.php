@@ -6,18 +6,18 @@
  * Time: 14:41
  */
 
-namespace TelegramBot\Api\Types\Inline\InputMessageContent;
+namespace Octisfall\TelegramBot\Api\Types\Inline\InputMessageContent;
 
-use TelegramBot\Api\BaseType;
-use TelegramBot\Api\TypeInterface;
-use TelegramBot\Api\Types\Inline\InputMessageContent;
+use Octisfall\TelegramBot\Api\BaseType;
+use Octisfall\TelegramBot\Api\TypeInterface;
+use Octisfall\TelegramBot\Api\Types\Inline\InputMessageContent;
 
 /**
  * Class Text
  * @see https://core.telegram.org/bots/api#inputtextmessagecontent
  * Represents the content of a text message to be sent as the result of an inline query.
  *
- * @package TelegramBot\Api\Types\Inline\InputMessageContent
+ * @package Octisfall\TelegramBot\Api\Types\Inline\InputMessageContent
  */
 class Text extends InputMessageContent implements TypeInterface
 {

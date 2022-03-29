@@ -1,16 +1,16 @@
 <?php
 
-namespace TelegramBot\Api\Types;
+namespace Octisfall\TelegramBot\Api\Types;
 
-use TelegramBot\Api\BaseType;
-use TelegramBot\Api\InvalidArgumentException;
-use TelegramBot\Api\TypeInterface;
+use Octisfall\TelegramBot\Api\BaseType;
+use Octisfall\TelegramBot\Api\InvalidArgumentException;
+use Octisfall\TelegramBot\Api\TypeInterface;
 
 /**
  * Class PollOption
  * This object contains information about one answer option in a poll.
  *
- * @package TelegramBot\Api\Types
+ * @package Octisfall\TelegramBot\Api\Types
  */
 class PollOption extends BaseType implements TypeInterface
 {

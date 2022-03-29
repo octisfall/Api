@@ -1,15 +1,15 @@
 <?php
 
-namespace TelegramBot\Api\Types\Payments\Query;
+namespace Octisfall\TelegramBot\Api\Types\Payments\Query;
 
-use TelegramBot\Api\BaseType;
-use TelegramBot\Api\Types\Payments\ArrayOfLabeledPrice;
+use Octisfall\TelegramBot\Api\BaseType;
+use Octisfall\TelegramBot\Api\Types\Payments\ArrayOfLabeledPrice;
 
 /**
  * Class AnswerPreCheckoutQuery
  * Use this method to respond to such pre-checkout queries.
  *
- * @package TelegramBot\Api\Types\Payments\Query
+ * @package Octisfall\TelegramBot\Api\Types\Payments\Query
  */
 class AnswerPreCheckoutQuery extends BaseType
 {

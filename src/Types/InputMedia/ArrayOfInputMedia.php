@@ -1,13 +1,13 @@
 <?php
 
-namespace TelegramBot\Api\Types\InputMedia;
+namespace Octisfall\TelegramBot\Api\Types\InputMedia;
 
-use TelegramBot\Api\Collection\Collection;
+use Octisfall\TelegramBot\Api\Collection\Collection;
 
 /**
  * Class ArrayOfInputMedia
  *
- * @package TelegramBot\Api
+ * @package Octisfall\TelegramBot\Api
  */
 class ArrayOfInputMedia extends Collection
 {

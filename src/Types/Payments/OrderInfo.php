@@ -1,14 +1,14 @@
 <?php
 
-namespace TelegramBot\Api\Types\Payments;
+namespace Octisfall\TelegramBot\Api\Types\Payments;
 
-use TelegramBot\Api\BaseType;
+use Octisfall\TelegramBot\Api\BaseType;
 
 /**
  * Class OrderInfo
  * This object represents information about an order.
  *
- * @package TelegramBot\Api\Types\Payments
+ * @package Octisfall\TelegramBot\Api\Types\Payments
  */
 class OrderInfo extends BaseType
 {

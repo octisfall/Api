@@ -1,16 +1,16 @@
 <?php
 
-namespace TelegramBot\Api\Types\Payments\Query;
+namespace Octisfall\TelegramBot\Api\Types\Payments\Query;
 
-use TelegramBot\Api\BaseType;
-use TelegramBot\Api\Types\Payments\ArrayOfLabeledPrice;
+use Octisfall\TelegramBot\Api\BaseType;
+use Octisfall\TelegramBot\Api\Types\Payments\ArrayOfLabeledPrice;
 
 /**
  * Class AnswerShippingQuery
  * If you sent an invoice requesting a shipping address and the parameter is_flexible was specified,
  * the Bot API will send an Update with a shipping_query field to the bot
  *
- * @package TelegramBot\Api\Types\Payments\Query
+ * @package Octisfall\TelegramBot\Api\Types\Payments\Query
  */
 class AnswerShippingQuery extends BaseType
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace TelegramBot\Api\Test;
+namespace Octisfall\TelegramBot\Api\Test;
 
 
-use TelegramBot\Api\Types\PhotoSize;
-use TelegramBot\Api\Types\ArrayOfPhotoSize;
+use Octisfall\TelegramBot\Api\Types\PhotoSize;
+use Octisfall\TelegramBot\Api\Types\ArrayOfPhotoSize;
 
 class ArrayOfPhotoSizeTest extends \PHPUnit_Framework_TestCase
 {

@@ -5,15 +5,15 @@
  * Time: 19:43
  */
 
-namespace TelegramBot\Api\Types;
+namespace Octisfall\TelegramBot\Api\Types;
 
-use TelegramBot\Api\BaseType;
-use TelegramBot\Api\TypeInterface;
+use Octisfall\TelegramBot\Api\BaseType;
+use Octisfall\TelegramBot\Api\TypeInterface;
 
 /**
  * Contains information about the current status of a webhook.
  *
- * @package TelegramBot\Api\Types
+ * @package Octisfall\TelegramBot\Api\Types
  */
 class WebhookInfo extends BaseType implements TypeInterface
 {

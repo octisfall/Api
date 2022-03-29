@@ -1,12 +1,12 @@
 <?php
-namespace TelegramBot\Api\Types;
+namespace Octisfall\TelegramBot\Api\Types;
 
-use TelegramBot\Api\BaseType;
-use TelegramBot\Api\InvalidArgumentException;
-use TelegramBot\Api\TypeInterface;
-use TelegramBot\Api\Types\Inline\InlineKeyboardMarkup;
-use TelegramBot\Api\Types\Payments\Invoice;
-use TelegramBot\Api\Types\Payments\SuccessfulPayment;
+use Octisfall\TelegramBot\Api\BaseType;
+use Octisfall\TelegramBot\Api\InvalidArgumentException;
+use Octisfall\TelegramBot\Api\TypeInterface;
+use Octisfall\TelegramBot\Api\Types\Inline\InlineKeyboardMarkup;
+use Octisfall\TelegramBot\Api\Types\Payments\Invoice;
+use Octisfall\TelegramBot\Api\Types\Payments\SuccessfulPayment;
 
 class Message extends BaseType implements TypeInterface
 {
@@ -80,7 +80,7 @@ class Message extends BaseType implements TypeInterface
     /**
      * Optional. Sender name. Can be empty for messages sent to channels
      *
-     * @var \TelegramBot\Api\Types\User
+     * @var \Octisfall\TelegramBot\Api\Types\User
      */
     protected $from;
 
@@ -94,14 +94,14 @@ class Message extends BaseType implements TypeInterface
     /**
      * Conversation the message belongs to — user in case of a private message, GroupChat in case of a group
      *
-     * @var \TelegramBot\Api\Types\Chat
+     * @var \Octisfall\TelegramBot\Api\Types\Chat
      */
     protected $chat;
 
     /**
      * Optional. For forwarded messages, sender of the original message
      *
-     * @var \TelegramBot\Api\Types\User
+     * @var \Octisfall\TelegramBot\Api\Types\User
      */
     protected $forwardFrom;
 
@@ -109,7 +109,7 @@ class Message extends BaseType implements TypeInterface
      * Optional. For messages forwarded from channels, information about
      * the original channel
      *
-     * @var \TelegramBot\Api\Types\Chat
+     * @var \Octisfall\TelegramBot\Api\Types\Chat
      */
     protected $forwardFromChat;
 
@@ -147,14 +147,14 @@ class Message extends BaseType implements TypeInterface
      * Optional. For replies, the original message. Note that the Message object in this field will not contain further
      * reply_to_message fields even if it itself is a reply.
      *
-     * @var \TelegramBot\Api\Types\Message
+     * @var \Octisfall\TelegramBot\Api\Types\Message
      */
     protected $replyToMessage;
 
     /**
      * Optional. Bot through which the message was sent.
      *
-     * @var \TelegramBot\Api\Types\User
+     * @var \Octisfall\TelegramBot\Api\Types\User
      */
     protected $viaBot;
 
@@ -189,7 +189,7 @@ class Message extends BaseType implements TypeInterface
 
     /**
      * Optional. For text messages, special entities like usernames, URLs, bot commands, etc. that appear in the text.
-     * array of \TelegramBot\Api\Types\MessageEntity
+     * array of \Octisfall\TelegramBot\Api\Types\MessageEntity
      *
      * @var array
      */
@@ -206,27 +206,27 @@ class Message extends BaseType implements TypeInterface
     /**
      * Optional. Message is an audio file, information about the file
      *
-     * @var \TelegramBot\Api\Types\Audio
+     * @var \Octisfall\TelegramBot\Api\Types\Audio
      */
     protected $audio;
 
     /**
      * Optional. Message is a general file, information about the file
      *
-     * @var \TelegramBot\Api\Types\Document
+     * @var \Octisfall\TelegramBot\Api\Types\Document
      */
     protected $document;
 
     /**
      * Optional. Message is a animation, information about the animation
      *
-     * @var \TelegramBot\Api\Types\Animation
+     * @var \Octisfall\TelegramBot\Api\Types\Animation
      */
     protected $animation;
 
     /**
      * Optional. Message is a photo, available sizes of the photo
-     * array of \TelegramBot\Api\Types\Photo
+     * array of \Octisfall\TelegramBot\Api\Types\Photo
      *
      * @var array
      */
@@ -235,21 +235,21 @@ class Message extends BaseType implements TypeInterface
     /**
      * Optional. Message is a sticker, information about the sticker
      *
-     * @var \TelegramBot\Api\Types\Sticker
+     * @var \Octisfall\TelegramBot\Api\Types\Sticker
      */
     protected $sticker;
 
     /**
      * Optional. Message is a video, information about the video
      *
-     * @var \TelegramBot\Api\Types\Video
+     * @var \Octisfall\TelegramBot\Api\Types\Video
      */
     protected $video;
 
     /**
      * Optional. Message is a voice message, information about the file
      *
-     * @var \TelegramBot\Api\Types\Voice
+     * @var \Octisfall\TelegramBot\Api\Types\Voice
      */
     protected $voice;
 
@@ -263,42 +263,42 @@ class Message extends BaseType implements TypeInterface
     /**
      * Optional. Message is a shared contact, information about the contact
      *
-     * @var \TelegramBot\Api\Types\Contact
+     * @var \Octisfall\TelegramBot\Api\Types\Contact
      */
     protected $contact;
 
     /**
      * Optional. Message is a shared location, information about the location
      *
-     * @var \TelegramBot\Api\Types\Location
+     * @var \Octisfall\TelegramBot\Api\Types\Location
      */
     protected $location;
 
     /**
      * Optional. Message is a venue, information about the venue
      *
-     * @var \TelegramBot\Api\Types\Venue
+     * @var \Octisfall\TelegramBot\Api\Types\Venue
      */
     protected $venue;
 
     /**
      * Optional. Message is a native poll, information about the poll
      *
-     * @var \TelegramBot\Api\Types\Poll
+     * @var \Octisfall\TelegramBot\Api\Types\Poll
      */
     protected $poll;
 
     /**
      * Optional. Message is a dice with random value from 1 to 6
      *
-     * @var \TelegramBot\Api\Types\Dice
+     * @var \Octisfall\TelegramBot\Api\Types\Dice
      */
     protected $dice;
 
     /**
      * Optional. New members that were added to the group or supergroup and information about them
      * (the bot itself may be one of these members)
-     * array of \TelegramBot\Api\Types\User
+     * array of \Octisfall\TelegramBot\Api\Types\User
      *
      * @var array
      */
@@ -307,7 +307,7 @@ class Message extends BaseType implements TypeInterface
     /**
      * Optional. A member was removed from the group, information about them (this member may be bot itself)
      *
-     * @var \TelegramBot\Api\Types\User
+     * @var \Octisfall\TelegramBot\Api\Types\User
      */
     protected $leftChatMember;
 

@@ -6,17 +6,17 @@
  * Time: 15:45
  */
 
-namespace TelegramBot\Api\Types\Inline\InputMessageContent;
+namespace Octisfall\TelegramBot\Api\Types\Inline\InputMessageContent;
 
-use TelegramBot\Api\TypeInterface;
-use TelegramBot\Api\Types\Inline\InputMessageContent;
+use Octisfall\TelegramBot\Api\TypeInterface;
+use Octisfall\TelegramBot\Api\Types\Inline\InputMessageContent;
 
 /**
  * Class Venue
  * @see https://core.telegram.org/bots/api#inputvenuemessagecontent
  * Represents the content of a venue message to be sent as the result of an inline query.
  *
- * @package TelegramBot\Api\Types\Inline
+ * @package Octisfall\TelegramBot\Api\Types\Inline
  */
 class Venue extends InputMessageContent implements TypeInterface
 {

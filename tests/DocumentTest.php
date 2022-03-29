@@ -1,10 +1,10 @@
 <?php
 
-namespace TelegramBot\Api\Test;
+namespace Octisfall\TelegramBot\Api\Test;
 
 
-use TelegramBot\Api\Types\Document;
-use TelegramBot\Api\Types\PhotoSize;
+use Octisfall\TelegramBot\Api\Types\Document;
+use Octisfall\TelegramBot\Api\Types\PhotoSize;
 
 class DocumentTest extends \PHPUnit_Framework_TestCase
 {
@@ -46,7 +46,7 @@ class DocumentTest extends \PHPUnit_Framework_TestCase
         ));
         $item->setThumb($thumb);
         $this->assertEquals($thumb, $item->getThumb());
-        $this->assertInstanceOf('\TelegramBot\Api\Types\PhotoSize', $item->getThumb());
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\PhotoSize', $item->getThumb());
     }
 
     public function testSetFileName()
@@ -92,7 +92,7 @@ class DocumentTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \TelegramBot\Api\InvalidArgumentException
+     * @expectedException \Octisfall\TelegramBot\Api\InvalidArgumentException
      */
     public function testSetFileSizeException()
     {
@@ -120,17 +120,17 @@ class DocumentTest extends \PHPUnit_Framework_TestCase
             'height' => 6,
             'file_size' => 7
         ));
-        $this->assertInstanceOf('\TelegramBot\Api\Types\Document', $item);
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\Document', $item);
         $this->assertAttributeEquals('testFileId1', 'fileId', $item);
         $this->assertAttributeEquals('testFileName', 'fileName', $item);
         $this->assertAttributeEquals('audio/mp3', 'mimeType', $item);
         $this->assertAttributeEquals(3, 'fileSize', $item);
         $this->assertAttributeEquals($thumb, 'thumb', $item);
-        $this->assertInstanceOf('\TelegramBot\Api\Types\PhotoSize', $item->getThumb());
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\PhotoSize', $item->getThumb());
     }
 
     /**
-     * @expectedException \TelegramBot\Api\InvalidArgumentException
+     * @expectedException \Octisfall\TelegramBot\Api\InvalidArgumentException
      */
     public function testFromResponseException1()
     {

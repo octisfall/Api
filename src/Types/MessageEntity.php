@@ -6,10 +6,10 @@
  * Time: 04:10
  */
 
-namespace TelegramBot\Api\Types;
+namespace Octisfall\TelegramBot\Api\Types;
 
-use TelegramBot\Api\BaseType;
-use TelegramBot\Api\TypeInterface;
+use Octisfall\TelegramBot\Api\BaseType;
+use Octisfall\TelegramBot\Api\TypeInterface;
 
 class MessageEntity extends BaseType implements TypeInterface
 {

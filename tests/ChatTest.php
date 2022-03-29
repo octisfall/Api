@@ -1,9 +1,9 @@
 <?php
 
-namespace TelegramBot\Api\Test;
+namespace Octisfall\TelegramBot\Api\Test;
 
-use TelegramBot\Api\Types\Chat;
-use TelegramBot\Api\Types\ChatPhoto;
+use Octisfall\TelegramBot\Api\Types\Chat;
+use Octisfall\TelegramBot\Api\Types\ChatPhoto;
 
 class ChatTest extends \PHPUnit_Framework_TestCase
 {
@@ -15,7 +15,7 @@ class ChatTest extends \PHPUnit_Framework_TestCase
             'title' => 'test chat'
         ));
 
-        $this->assertInstanceOf('\TelegramBot\Api\Types\Chat', $item);
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\Chat', $item);
         $this->assertEquals(1, $item->getId());
         $this->assertEquals('test chat', $item->getTitle());
 
@@ -173,7 +173,7 @@ class ChatTest extends \PHPUnit_Framework_TestCase
             'bio' => 'PHP Telegram Bot API'
         ));
 
-        $this->assertInstanceOf('\TelegramBot\Api\Types\Chat', $item);
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\Chat', $item);
         $this->assertEquals(123456, $item->getId());
         $this->assertEquals('Ilya', $item->getFirstName());
         $this->assertEquals('Gusev', $item->getLastName());
@@ -182,7 +182,7 @@ class ChatTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \TelegramBot\Api\InvalidArgumentException
+     * @expectedException \Octisfall\TelegramBot\Api\InvalidArgumentException
      */
     public function testSetIdException1()
     {
@@ -191,7 +191,7 @@ class ChatTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \TelegramBot\Api\InvalidArgumentException
+     * @expectedException \Octisfall\TelegramBot\Api\InvalidArgumentException
      */
     public function testSetIdException2()
     {
@@ -200,7 +200,7 @@ class ChatTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \TelegramBot\Api\InvalidArgumentException
+     * @expectedException \Octisfall\TelegramBot\Api\InvalidArgumentException
      */
     public function testFromResponseException2()
     {
@@ -210,7 +210,7 @@ class ChatTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \TelegramBot\Api\InvalidArgumentException
+     * @expectedException \Octisfall\TelegramBot\Api\InvalidArgumentException
      */
     public function testFromResponseException3()
     {

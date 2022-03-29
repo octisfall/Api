@@ -1,10 +1,10 @@
 <?php
 
-namespace TelegramBot\Api\Test\Types;
+namespace Octisfall\TelegramBot\Api\Test\Types;
 
-use TelegramBot\Api\Types\CallbackQuery;
-use TelegramBot\Api\Types\Message;
-use TelegramBot\Api\Types\User;
+use Octisfall\TelegramBot\Api\Types\CallbackQuery;
+use Octisfall\TelegramBot\Api\Types\Message;
+use Octisfall\TelegramBot\Api\Types\User;
 
 class CallbackQueryTest extends \PHPUnit_Framework_TestCase
 {
@@ -28,7 +28,7 @@ class CallbackQueryTest extends \PHPUnit_Framework_TestCase
 
         $user = User::fromResponse($this->callbackQueryFixture['from']);
 
-        $this->assertInstanceOf('\TelegramBot\Api\Types\CallbackQuery', $item);
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\CallbackQuery', $item);
         $this->assertEquals($this->callbackQueryFixture['id'], $item->getId());
         $this->assertEquals($user, $item->getFrom());
         $this->assertEquals($this->callbackQueryFixture['inline_message_id'], $item->getInlineMessageId());
@@ -38,7 +38,7 @@ class CallbackQueryTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \TelegramBot\Api\InvalidArgumentException
+     * @expectedException \Octisfall\TelegramBot\Api\InvalidArgumentException
      */
     public function testFromResponseExceptionEmptyId() {
         unset($this->callbackQueryFixture['id']);
@@ -46,7 +46,7 @@ class CallbackQueryTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \TelegramBot\Api\InvalidArgumentException
+     * @expectedException \Octisfall\TelegramBot\Api\InvalidArgumentException
      */
     public function testFromResponseExceptionEmptyFrom() {
         unset($this->callbackQueryFixture['from']);

@@ -1,8 +1,8 @@
 <?php
 
-namespace TelegramBot\Api\Test;
+namespace Octisfall\TelegramBot\Api\Test;
 
-use TelegramBot\Api\Types\ReplyKeyboardHide;
+use Octisfall\TelegramBot\Api\Types\ReplyKeyboardHide;
 
 class ReplyKeyboardHideTest extends \PHPUnit_Framework_TestCase
 {

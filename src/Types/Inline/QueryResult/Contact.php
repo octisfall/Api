@@ -6,10 +6,10 @@
  * Time: 03:58
  */
 
-namespace TelegramBot\Api\Types\Inline\QueryResult;
+namespace Octisfall\TelegramBot\Api\Types\Inline\QueryResult;
 
-use TelegramBot\Api\Types\Inline\InlineKeyboardMarkup;
-use TelegramBot\Api\Types\Inline\InputMessageContent;
+use Octisfall\TelegramBot\Api\Types\Inline\InlineKeyboardMarkup;
+use Octisfall\TelegramBot\Api\Types\Inline\InputMessageContent;
 
 class Contact extends AbstractInlineQueryResult
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace TelegramBot\Api\Test;
+namespace Octisfall\TelegramBot\Api\Test;
 
-use TelegramBot\Api\Types\User;
+use Octisfall\TelegramBot\Api\Types\User;
 
 class UserTest extends \PHPUnit_Framework_TestCase
 {
@@ -70,7 +70,7 @@ class UserTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \TelegramBot\Api\InvalidArgumentException
+     * @expectedException \Octisfall\TelegramBot\Api\InvalidArgumentException
      */
     public function testSetIdException()
     {
@@ -86,7 +86,7 @@ class UserTest extends \PHPUnit_Framework_TestCase
             'id' => 123456,
             'username' => 'iGusev'
         ));
-        $this->assertInstanceOf('\TelegramBot\Api\Types\User', $user);
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\User', $user);
         $this->assertEquals(123456, $user->getId());
         $this->assertEquals('Ilya', $user->getFirstName());
         $this->assertEquals('Gusev', $user->getLastName());
@@ -94,7 +94,7 @@ class UserTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \TelegramBot\Api\InvalidArgumentException
+     * @expectedException \Octisfall\TelegramBot\Api\InvalidArgumentException
      */
     public function testFromResponseException1()
     {
@@ -105,7 +105,7 @@ class UserTest extends \PHPUnit_Framework_TestCase
         ));
     }
     /**
-     * @expectedException \TelegramBot\Api\InvalidArgumentException
+     * @expectedException \Octisfall\TelegramBot\Api\InvalidArgumentException
      */
     public function testFromResponseException2()
     {

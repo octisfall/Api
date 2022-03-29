@@ -1,17 +1,17 @@
 <?php
 
-namespace TelegramBot\Api\Types;
+namespace Octisfall\TelegramBot\Api\Types;
 
-use TelegramBot\Api\BaseType;
-use TelegramBot\Api\InvalidArgumentException;
-use TelegramBot\Api\TypeInterface;
+use Octisfall\TelegramBot\Api\BaseType;
+use Octisfall\TelegramBot\Api\InvalidArgumentException;
+use Octisfall\TelegramBot\Api\TypeInterface;
 
 /**
  * Class Document
  * This object represents a general file (as opposed to photos and audio files).
  * Telegram users can send files of any type of up to 1.5 GB in size.
  *
- * @package TelegramBot\Api\Types
+ * @package Octisfall\TelegramBot\Api\Types
  */
 class Document extends BaseType implements TypeInterface
 {

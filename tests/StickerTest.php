@@ -1,9 +1,9 @@
 <?php
 
-namespace TelegramBot\Api\Test;
+namespace Octisfall\TelegramBot\Api\Test;
 
-use TelegramBot\Api\Types\PhotoSize;
-use TelegramBot\Api\Types\Sticker;
+use Octisfall\TelegramBot\Api\Types\PhotoSize;
+use Octisfall\TelegramBot\Api\Types\Sticker;
 
 class StickerTest extends \PHPUnit_Framework_TestCase {
     public function testSetFileId()
@@ -86,7 +86,7 @@ class StickerTest extends \PHPUnit_Framework_TestCase {
         ));
         $sticker->setThumb($thumb);
         $this->assertEquals($thumb, $sticker->getThumb());
-        $this->assertInstanceOf('\TelegramBot\Api\Types\PhotoSize', $sticker->getThumb());
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\PhotoSize', $sticker->getThumb());
     }
 
     public function testFromResponse()
@@ -109,7 +109,7 @@ class StickerTest extends \PHPUnit_Framework_TestCase {
             'height' => 2,
             'file_size' => 3
         ));
-        $this->assertInstanceOf('\TelegramBot\Api\Types\Sticker', $sticker);
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\Sticker', $sticker);
         $this->assertAttributeEquals('testFileId1', 'fileId', $sticker);
         $this->assertAttributeEquals(1, 'width', $sticker);
         $this->assertAttributeEquals(2, 'height', $sticker);
@@ -118,7 +118,7 @@ class StickerTest extends \PHPUnit_Framework_TestCase {
     }
 
     /**
-     * @expectedException \TelegramBot\Api\InvalidArgumentException
+     * @expectedException \Octisfall\TelegramBot\Api\InvalidArgumentException
      */
     public function testSetFileSizeException()
     {
@@ -127,7 +127,7 @@ class StickerTest extends \PHPUnit_Framework_TestCase {
     }
 
     /**
-     * @expectedException \TelegramBot\Api\InvalidArgumentException
+     * @expectedException \Octisfall\TelegramBot\Api\InvalidArgumentException
      */
     public function testSetHeightException()
     {
@@ -136,7 +136,7 @@ class StickerTest extends \PHPUnit_Framework_TestCase {
     }
 
     /**
-     * @expectedException \TelegramBot\Api\InvalidArgumentException
+     * @expectedException \Octisfall\TelegramBot\Api\InvalidArgumentException
      */
     public function testSetWidthException()
     {

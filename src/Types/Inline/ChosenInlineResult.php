@@ -1,16 +1,16 @@
 <?php
 
-namespace TelegramBot\Api\Types\Inline;
+namespace Octisfall\TelegramBot\Api\Types\Inline;
 
-use TelegramBot\Api\BaseType;
-use TelegramBot\Api\Types\Location;
-use TelegramBot\Api\Types\User;
+use Octisfall\TelegramBot\Api\BaseType;
+use Octisfall\TelegramBot\Api\Types\Location;
+use Octisfall\TelegramBot\Api\Types\User;
 
 /**
  * Class ChosenInlineResult
  * This object represents a result of an inline query that was chosen by the user and sent to their chat partner.
  *
- * @package TelegramBot\Api\Types
+ * @package Octisfall\TelegramBot\Api\Types
  */
 class ChosenInlineResult extends BaseType
 {

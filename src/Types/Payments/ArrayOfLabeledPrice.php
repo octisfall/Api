@@ -1,6 +1,6 @@
 <?php
 
-namespace TelegramBot\Api\Types\Payments;
+namespace Octisfall\TelegramBot\Api\Types\Payments;
 
 abstract class ArrayOfLabeledPrice
 {

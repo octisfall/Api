@@ -1,8 +1,8 @@
 <?php
 
-namespace TelegramBot\Api\Types;
+namespace Octisfall\TelegramBot\Api\Types;
 
-use TelegramBot\Api\BaseType;
+use Octisfall\TelegramBot\Api\BaseType;
 
 /**
  * Class CallbackQuery
@@ -14,7 +14,7 @@ use TelegramBot\Api\BaseType;
  * the field inline_message_id will be present.
  * Exactly one of the fields data or game_short_name will be present.
  *
- * @package TelegramBot\Api\Types
+ * @package Octisfall\TelegramBot\Api\Types
  */
 class CallbackQuery extends BaseType
 {
@@ -50,7 +50,7 @@ class CallbackQuery extends BaseType
     /**
      * Sender
      *
-     * @var \TelegramBot\Api\Types\User
+     * @var \Octisfall\TelegramBot\Api\Types\User
      */
     protected $from;
 
@@ -59,7 +59,7 @@ class CallbackQuery extends BaseType
      * Note that message content and message date will not be available
      * if the message is too old
      *
-     * @var \TelegramBot\Api\Types\Message
+     * @var \Octisfall\TelegramBot\Api\Types\Message
      */
     protected $message;
 

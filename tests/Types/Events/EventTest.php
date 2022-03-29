@@ -1,9 +1,9 @@
 <?php
 
-namespace TelegramBot\Api\Test\Types\Events;
+namespace Octisfall\TelegramBot\Api\Test\Types\Events;
 
-use TelegramBot\Api\Events\Event;
-use TelegramBot\Api\Types\Update;
+use Octisfall\TelegramBot\Api\Events\Event;
+use Octisfall\TelegramBot\Api\Types\Update;
 
 class EventTest extends \PHPUnit_Framework_TestCase
 {
@@ -53,7 +53,7 @@ class EventTest extends \PHPUnit_Framework_TestCase
     {
         $item = new Event($action, $checker);
 
-        $this->assertInstanceOf('TelegramBot\Api\Events\Event', $item);
+        $this->assertInstanceOf('Octisfall\TelegramBot\Api\Events\Event', $item);
     }
 
     /**
@@ -99,7 +99,7 @@ class EventTest extends \PHPUnit_Framework_TestCase
 
         $result = $item->executeAction($update);
 
-        $this->assertInstanceOf('\TelegramBot\Api\Types\Update', $result);
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\Update', $result);
         $this->assertEquals($update, $result);
     }
 
@@ -135,7 +135,7 @@ class EventTest extends \PHPUnit_Framework_TestCase
 
         $result = $item->executeChecker($update);
 
-        $this->assertInstanceOf('\TelegramBot\Api\Types\Update', $result);
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\Update', $result);
         $this->assertEquals($update, $result);
     }
 

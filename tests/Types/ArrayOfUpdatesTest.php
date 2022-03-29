@@ -1,8 +1,8 @@
 <?php
 
-namespace TelegramBot\Api\Test\Types;
+namespace Octisfall\TelegramBot\Api\Test\Types;
 
-use TelegramBot\Api\Types\ArrayOfUpdates;
+use Octisfall\TelegramBot\Api\Types\ArrayOfUpdates;
 
 class ArrayOfUpdatesTest extends \PHPUnit_Framework_TestCase
 {
@@ -50,7 +50,7 @@ class ArrayOfUpdatesTest extends \PHPUnit_Framework_TestCase
         $this->assertInternalType('array', $items);
 
         foreach($items as $item) {
-            $this->assertInstanceOf('\TelegramBot\Api\Types\Update', $item);
+            $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\Update', $item);
         }
     }
 }

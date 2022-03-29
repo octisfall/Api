@@ -1,14 +1,14 @@
 <?php
 
-namespace TelegramBot\Api\Types\Payments;
+namespace Octisfall\TelegramBot\Api\Types\Payments;
 
-use TelegramBot\Api\BaseType;
+use Octisfall\TelegramBot\Api\BaseType;
 
 /**
  * Class LabeledPrice
  * This object represents a portion of the price for goods or services.
  *
- * @package TelegramBot\Api\Types\Payments
+ * @package Octisfall\TelegramBot\Api\Types\Payments
  */
 class LabeledPrice extends BaseType
 {

@@ -1,16 +1,16 @@
 <?php
 
-namespace TelegramBot\Api\Types\Inline\QueryResult;
+namespace Octisfall\TelegramBot\Api\Types\Inline\QueryResult;
 
-use TelegramBot\Api\BaseType;
-use TelegramBot\Api\Types\Inline\InlineKeyboardMarkup;
-use TelegramBot\Api\Types\Inline\InputMessageContent;
+use Octisfall\TelegramBot\Api\BaseType;
+use Octisfall\TelegramBot\Api\Types\Inline\InlineKeyboardMarkup;
+use Octisfall\TelegramBot\Api\Types\Inline\InputMessageContent;
 
 /**
  * Class AbstractInlineQueryResult
  * Abstract class for representing one result of an inline query
  *
- * @package TelegramBot\Api\Types
+ * @package Octisfall\TelegramBot\Api\Types
  */
 class AbstractInlineQueryResult extends BaseType
 {

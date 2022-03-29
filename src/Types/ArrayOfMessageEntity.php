@@ -6,7 +6,7 @@
  * Time: 04:16
  */
 
-namespace TelegramBot\Api\Types;
+namespace Octisfall\TelegramBot\Api\Types;
 
 abstract class ArrayOfMessageEntity
 {

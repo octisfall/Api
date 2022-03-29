@@ -5,9 +5,9 @@
  * Time: 19:54
  */
 
-namespace TelegramBot\Api\Test;
+namespace Octisfall\TelegramBot\Api\Test;
 
-use TelegramBot\Api\Types\WebhookInfo;
+use Octisfall\TelegramBot\Api\Types\WebhookInfo;
 
 class WebhookInfoTest extends \PHPUnit_Framework_TestCase
 {
@@ -22,7 +22,7 @@ class WebhookInfoTest extends \PHPUnit_Framework_TestCase
             'max_connections' => 40,
             'allowed_updates' => null
         ));
-        $this->assertInstanceOf('\TelegramBot\Api\Types\WebhookInfo', $webhookInfo);
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\WebhookInfo', $webhookInfo);
         $this->assertEquals('', $webhookInfo->getUrl());
         $this->assertEquals(false, $webhookInfo->hasCustomCertificate());
         $this->assertEquals(0, $webhookInfo->getPendingUpdateCount());

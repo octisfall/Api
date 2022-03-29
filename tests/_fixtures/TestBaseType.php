@@ -1,6 +1,6 @@
 <?php
 
-use TelegramBot\Api\BaseType;
+use Octisfall\TelegramBot\Api\BaseType;
 
 class TestBaseType extends BaseType
 {

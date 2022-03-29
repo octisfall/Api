@@ -1,9 +1,9 @@
 <?php
 
-namespace TelegramBot\Api\Types\Inline\QueryResult;
+namespace Octisfall\TelegramBot\Api\Types\Inline\QueryResult;
 
-use TelegramBot\Api\Types\Inline\InlineKeyboardMarkup;
-use TelegramBot\Api\Types\Inline\InputMessageContent;
+use Octisfall\TelegramBot\Api\Types\Inline\InlineKeyboardMarkup;
+use Octisfall\TelegramBot\Api\Types\Inline\InputMessageContent;
 
 /**
  * Class InlineQueryResultMpeg4Gif
@@ -11,7 +11,7 @@ use TelegramBot\Api\Types\Inline\InputMessageContent;
  * By default, this animated MPEG-4 file will be sent by the user with optional caption.
  * Alternatively, you can provide message_text to send it instead of the animation.
  *
- * @package TelegramBot\Api\Types\Inline
+ * @package Octisfall\TelegramBot\Api\Types\Inline
  */
 class Mpeg4Gif extends AbstractInlineQueryResult
 {

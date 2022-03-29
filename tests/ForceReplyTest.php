@@ -1,9 +1,9 @@
 <?php
 
-namespace TelegramBot\Api\Test;
+namespace Octisfall\TelegramBot\Api\Test;
 
 
-use TelegramBot\Api\Types\ForceReply;
+use Octisfall\TelegramBot\Api\Types\ForceReply;
 
 class ForceReplyTest extends \PHPUnit_Framework_TestCase
 {

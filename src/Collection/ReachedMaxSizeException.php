@@ -1,14 +1,14 @@
 <?php
 
-namespace TelegramBot\Api\Collection;
+namespace Octisfall\TelegramBot\Api\Collection;
 
-use TelegramBot\Api\Exception;
+use Octisfall\TelegramBot\Api\Exception;
 
 /**
  * Class ReachedMaxSizeException
  *
  * @codeCoverageIgnore
- * @package TelegramBot\Api
+ * @package Octisfall\TelegramBot\Api
  */
 class ReachedMaxSizeException extends Exception
 {

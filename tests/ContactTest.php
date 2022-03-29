@@ -1,8 +1,8 @@
 <?php
 
-namespace TelegramBot\Api\Test;
+namespace Octisfall\TelegramBot\Api\Test;
 
-use TelegramBot\Api\Types\Contact;
+use Octisfall\TelegramBot\Api\Types\Contact;
 
 class ContactTest extends \PHPUnit_Framework_TestCase
 {
@@ -84,7 +84,7 @@ class ContactTest extends \PHPUnit_Framework_TestCase
             'phone_number' => '123456',
             'user_id' => 'iGusev'
         ));
-        $this->assertInstanceOf('\TelegramBot\Api\Types\Contact', $contact);
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\Contact', $contact);
         $this->assertEquals('123456', $contact->getPhoneNumber());
         $this->assertEquals('Ilya', $contact->getFirstName());
         $this->assertEquals('Gusev', $contact->getLastName());

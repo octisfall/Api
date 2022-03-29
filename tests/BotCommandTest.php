@@ -1,8 +1,8 @@
 <?php
 
-namespace TelegramBot\Api\Test;
+namespace Octisfall\TelegramBot\Api\Test;
 
-use TelegramBot\Api\Types\BotCommand;
+use Octisfall\TelegramBot\Api\Types\BotCommand;
 
 class BotCommandTest extends \PHPUnit_Framework_TestCase
 {
@@ -43,7 +43,7 @@ class BotCommandTest extends \PHPUnit_Framework_TestCase
             ]
         );
 
-        $this->assertInstanceOf('\TelegramBot\Api\Types\BotCommand', $botCommand);
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\BotCommand', $botCommand);
         $this->assertEquals('start', $botCommand->getCommand());
         $this->assertEquals('This is a start command!', $botCommand->getDescription());
     }

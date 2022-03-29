@@ -1,15 +1,15 @@
 <?php
 
-namespace TelegramBot\Api\Types\Inline\QueryResult;
+namespace Octisfall\TelegramBot\Api\Types\Inline\QueryResult;
 
-use TelegramBot\Api\Types\Inline\InlineKeyboardMarkup;
-use TelegramBot\Api\Types\Inline\InputMessageContent;
+use Octisfall\TelegramBot\Api\Types\Inline\InlineKeyboardMarkup;
+use Octisfall\TelegramBot\Api\Types\Inline\InputMessageContent;
 
 /**
  * Class InlineQueryResultArticle
  * Represents a link to an article or web page.
  *
- * @package TelegramBot\Api\Types\Inline
+ * @package Octisfall\TelegramBot\Api\Types\Inline
  */
 class Article extends AbstractInlineQueryResult
 {

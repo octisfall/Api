@@ -1,17 +1,17 @@
 <?php
 
-namespace TelegramBot\Api\Types\Payments\Query;
+namespace Octisfall\TelegramBot\Api\Types\Payments\Query;
 
-use TelegramBot\Api\BaseType;
-use TelegramBot\Api\Types\Payments\ArrayOfLabeledPrice;
-use TelegramBot\Api\Types\Payments\ShippingAddress;
-use TelegramBot\Api\Types\User;
+use Octisfall\TelegramBot\Api\BaseType;
+use Octisfall\TelegramBot\Api\Types\Payments\ArrayOfLabeledPrice;
+use Octisfall\TelegramBot\Api\Types\Payments\ShippingAddress;
+use Octisfall\TelegramBot\Api\Types\User;
 
 /**
  * Class ShippingQuery
  * This object contains information about an incoming shipping query.
  *
- * @package TelegramBot\Api\Types\Payments\Query
+ * @package Octisfall\TelegramBot\Api\Types\Payments\Query
  */
 class ShippingQuery extends BaseType
 {

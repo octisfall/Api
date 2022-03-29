@@ -1,17 +1,17 @@
 <?php
 
-namespace TelegramBot\Api\Types;
+namespace Octisfall\TelegramBot\Api\Types;
 
-use TelegramBot\Api\BaseType;
+use Octisfall\TelegramBot\Api\BaseType;
 
 /**
  * Class ReplyKeyboardHide
  * Upon receiving a message with this object, Telegram clients will hide the current custom keyboard
  * and display the default letter-keyboard. By default, custom keyboards are displayed
  * until a new keyboard is sent by a bot. An exception is made for one-time keyboards
- * that are hidden immediately after the user presses a button (see \TelegramBot\Api\Types\ReplyKeyboardMarkup).
+ * that are hidden immediately after the user presses a button (see \Octisfall\TelegramBot\Api\Types\ReplyKeyboardMarkup).
  *
- * @package TelegramBot\Api\Types
+ * @package Octisfall\TelegramBot\Api\Types
  */
 class ReplyKeyboardHide extends BaseType
 {

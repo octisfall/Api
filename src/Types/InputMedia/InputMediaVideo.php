@@ -1,12 +1,12 @@
 <?php
 
-namespace TelegramBot\Api\Types\InputMedia;
+namespace Octisfall\TelegramBot\Api\Types\InputMedia;
 
 /**
  * Class InputMediaVideo
  * Represents a video to be sent.
  *
- * @package TelegramBot\Api
+ * @package Octisfall\TelegramBot\Api
  */
 class InputMediaVideo extends InputMedia
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace TelegramBot\Api\Test;
+namespace Octisfall\TelegramBot\Api\Test;
 
 
 use Symfony\Component\Yaml\Inline;
-use TelegramBot\Api\BotApi;
-use TelegramBot\Api\Client;
-use TelegramBot\Api\Types\Inline\InlineQuery;
-use TelegramBot\Api\Types\Message;
-use TelegramBot\Api\Types\Update;
+use Octisfall\TelegramBot\Api\BotApi;
+use Octisfall\TelegramBot\Api\Client;
+use Octisfall\TelegramBot\Api\Types\Inline\InlineQuery;
+use Octisfall\TelegramBot\Api\Types\Message;
+use Octisfall\TelegramBot\Api\Types\Update;
 
 class ClientTest extends \PHPUnit_Framework_TestCase
 {
@@ -123,7 +123,7 @@ class ClientTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetInlineQueryChecker($update)
     {
-        $reflectionMethod = new \ReflectionMethod('TelegramBot\Api\Client', 'getInlineQueryChecker');
+        $reflectionMethod = new \ReflectionMethod('Octisfall\TelegramBot\Api\Client', 'getInlineQueryChecker');
         $reflectionMethod->setAccessible(true);
 
         $result = $reflectionMethod->invoke(null);
@@ -134,7 +134,7 @@ class ClientTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException        \TelegramBot\Api\BadMethodCallException
+     * @expectedException        \Octisfall\TelegramBot\Api\BadMethodCallException
      * @expectedExceptionMessage Method testMethod not exists
      */
     public function testBadMethodCallException()
@@ -148,16 +148,16 @@ class ClientTest extends \PHPUnit_Framework_TestCase
     {
         $item = new Client('testToken');
 
-        $this->assertInstanceOf('\TelegramBot\Api\Client', $item);
-        $this->assertAttributeInstanceOf('\TelegramBot\Api\BotApi', 'api', $item);
-        $this->assertAttributeInstanceOf('\TelegramBot\Api\Events\EventCollection', 'events', $item);
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Client', $item);
+        $this->assertAttributeInstanceOf('\Octisfall\TelegramBot\Api\BotApi', 'api', $item);
+        $this->assertAttributeInstanceOf('\Octisfall\TelegramBot\Api\Events\EventCollection', 'events', $item);
     }
 
     public function testOn()
     {
         $item = new Client('testToken');
 
-        $mockedEventCollection = $this->getMockBuilder('\TelegramBot\Api\Events\EventCollection')
+        $mockedEventCollection = $this->getMockBuilder('\Octisfall\TelegramBot\Api\Events\EventCollection')
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -182,7 +182,7 @@ class ClientTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetChecker($update, $command)
     {
-        $reflectionMethod = new \ReflectionMethod('TelegramBot\Api\Client', 'getChecker');
+        $reflectionMethod = new \ReflectionMethod('Octisfall\TelegramBot\Api\Client', 'getChecker');
         $reflectionMethod->setAccessible(true);
 
         $result = $reflectionMethod->invoke(null, $command);
@@ -206,7 +206,7 @@ class ClientTest extends \PHPUnit_Framework_TestCase
     {
         $item = new Client('testToken');
 
-        $mockedEventCollection = $this->getMockBuilder('\TelegramBot\Api\Events\EventCollection')
+        $mockedEventCollection = $this->getMockBuilder('\Octisfall\TelegramBot\Api\Events\EventCollection')
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -229,7 +229,7 @@ class ClientTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetEvent($update, $command, $attr1, $attr2)
     {
-        $reflectionMethod = new \ReflectionMethod('TelegramBot\Api\Client', 'getEvent');
+        $reflectionMethod = new \ReflectionMethod('Octisfall\TelegramBot\Api\Client', 'getEvent');
         $reflectionMethod->setAccessible(true);
         global $test;
 
@@ -274,7 +274,7 @@ class ClientTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetInlineQueryEvent($update)
     {
-        $reflectionMethod = new \ReflectionMethod('TelegramBot\Api\Client', 'getInlineQueryEvent');
+        $reflectionMethod = new \ReflectionMethod('Octisfall\TelegramBot\Api\Client', 'getInlineQueryEvent');
         $reflectionMethod->setAccessible(true);
         global $test;
 

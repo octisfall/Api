@@ -1,20 +1,20 @@
 <?php
 
-namespace TelegramBot\Api\Test;
+namespace Octisfall\TelegramBot\Api\Test;
 
-use TelegramBot\Api\Types\Chat;
-use TelegramBot\Api\Types\Dice;
-use TelegramBot\Api\Types\Document;
-use TelegramBot\Api\Types\Location;
-use TelegramBot\Api\Types\Audio;
-use TelegramBot\Api\Types\Contact;
-use TelegramBot\Api\Types\GroupChat;
-use TelegramBot\Api\Types\Message;
-use TelegramBot\Api\Types\PhotoSize;
-use TelegramBot\Api\Types\Sticker;
-use TelegramBot\Api\Types\User;
-use TelegramBot\Api\Types\Video;
-use TelegramBot\Api\Types\Voice;
+use Octisfall\TelegramBot\Api\Types\Chat;
+use Octisfall\TelegramBot\Api\Types\Dice;
+use Octisfall\TelegramBot\Api\Types\Document;
+use Octisfall\TelegramBot\Api\Types\Location;
+use Octisfall\TelegramBot\Api\Types\Audio;
+use Octisfall\TelegramBot\Api\Types\Contact;
+use Octisfall\TelegramBot\Api\Types\GroupChat;
+use Octisfall\TelegramBot\Api\Types\Message;
+use Octisfall\TelegramBot\Api\Types\PhotoSize;
+use Octisfall\TelegramBot\Api\Types\Sticker;
+use Octisfall\TelegramBot\Api\Types\User;
+use Octisfall\TelegramBot\Api\Types\Video;
+use Octisfall\TelegramBot\Api\Types\Voice;
 
 class MessageTest extends \PHPUnit_Framework_TestCase
 {
@@ -106,7 +106,7 @@ class MessageTest extends \PHPUnit_Framework_TestCase
         ));
         $item->setFrom($user);
         $this->assertEquals($user, $item->getFrom());
-        $this->assertInstanceOf('\TelegramBot\Api\Types\User', $item->getFrom());
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\User', $item->getFrom());
     }
 
     public function testSetForwardFrom()
@@ -133,7 +133,7 @@ class MessageTest extends \PHPUnit_Framework_TestCase
         ));
         $item->setForwardFrom($user);
         $this->assertEquals($user, $item->getForwardFrom());
-        $this->assertInstanceOf('\TelegramBot\Api\Types\User', $item->getForwardFrom());
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\User', $item->getForwardFrom());
     }
 
     public function testSetChatGroup()
@@ -158,7 +158,7 @@ class MessageTest extends \PHPUnit_Framework_TestCase
         ));
         $item->setChat($chat);
         $this->assertEquals($chat, $item->getChat());
-        $this->assertInstanceOf('\TelegramBot\Api\Types\Chat', $item->getChat());
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\Chat', $item->getChat());
     }
 
     public function testSetChatUser()
@@ -187,7 +187,7 @@ class MessageTest extends \PHPUnit_Framework_TestCase
         ));
         $item->setChat($user);
         $this->assertEquals($user, $item->getChat());
-        $this->assertInstanceOf('\TelegramBot\Api\Types\Chat', $item->getChat());
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\Chat', $item->getChat());
     }
 
     public function testSetContact()
@@ -214,7 +214,7 @@ class MessageTest extends \PHPUnit_Framework_TestCase
         ));
         $item->setContact($contact);
         $this->assertEquals($contact, $item->getContact());
-        $this->assertInstanceOf('\TelegramBot\Api\Types\Contact', $item->getContact());
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\Contact', $item->getContact());
     }
 
     public function testSetDocument()
@@ -253,7 +253,7 @@ class MessageTest extends \PHPUnit_Framework_TestCase
         ));
         $item->setDocument($document);
         $this->assertEquals($document, $item->getDocument());
-        $this->assertInstanceOf('\TelegramBot\Api\Types\Document', $item->getDocument());
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\Document', $item->getDocument());
     }
 
     public function testSetLocation()
@@ -270,7 +270,7 @@ class MessageTest extends \PHPUnit_Framework_TestCase
         $location = Location::fromResponse(array('latitude' => 55.585827, 'longitude' => 37.675309));
         $item->setLocation($location);
         $this->assertEquals($location, $item->getLocation());
-        $this->assertInstanceOf('\TelegramBot\Api\Types\Location', $item->getLocation());
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\Location', $item->getLocation());
     }
 
     public function testSetAudio()
@@ -297,7 +297,7 @@ class MessageTest extends \PHPUnit_Framework_TestCase
         ));
         $item->setAudio($audio);
         $this->assertEquals($audio, $item->getAudio());
-        $this->assertInstanceOf('\TelegramBot\Api\Types\Audio', $item->getAudio());
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\Audio', $item->getAudio());
     }
 
     public function testSetVoice()
@@ -326,7 +326,7 @@ class MessageTest extends \PHPUnit_Framework_TestCase
         ));
         $item->setVoice($voice);
         $this->assertEquals($voice, $item->getVoice());
-        $this->assertInstanceOf('\TelegramBot\Api\Types\Voice', $item->getVoice());
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\Voice', $item->getVoice());
     }
 
     public function testSetVideo()
@@ -369,7 +369,7 @@ class MessageTest extends \PHPUnit_Framework_TestCase
         ));
         $item->setVideo($video);
         $this->assertEquals($video, $item->getVideo());
-        $this->assertInstanceOf('\TelegramBot\Api\Types\Video', $item->getVideo());
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\Video', $item->getVideo());
     }
 
     public function testSetDice()
@@ -392,7 +392,7 @@ class MessageTest extends \PHPUnit_Framework_TestCase
         ));
         $item->setDice($dice);
         $this->assertEquals($dice, $item->getDice());
-        $this->assertInstanceOf('\TelegramBot\Api\Types\Dice', $item->getDice());
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\Dice', $item->getDice());
     }
 
     public function testSetSticker()
@@ -431,7 +431,7 @@ class MessageTest extends \PHPUnit_Framework_TestCase
         ));
         $item->setSticker($sticker);
         $this->assertEquals($sticker, $item->getSticker());
-        $this->assertInstanceOf('\TelegramBot\Api\Types\Sticker', $item->getSticker());
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\Sticker', $item->getSticker());
     }
 
     public function testSetGroupChatCreated()
@@ -493,7 +493,7 @@ class MessageTest extends \PHPUnit_Framework_TestCase
         $item->setLeftChatMember($user);
 
         $this->assertEquals($user, $item->getLeftChatMember());
-        $this->assertInstanceOf('\TelegramBot\Api\Types\User', $item->getLeftChatMember());
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\User', $item->getLeftChatMember());
     }
 
     public function testSetNewChatParticipant()
@@ -523,7 +523,7 @@ class MessageTest extends \PHPUnit_Framework_TestCase
         $item->setNewChatMembers([$user]);
 
         $this->assertEquals([$user], $item->getNewChatMembers());
-        $this->assertInstanceOf('\TelegramBot\Api\Types\User', $item->getNewChatMembers()[0]);
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\User', $item->getNewChatMembers()[0]);
     }
 
     public function testSetNewChatTitle()
@@ -602,7 +602,7 @@ class MessageTest extends \PHPUnit_Framework_TestCase
         $item->setReplyToMessage($replyMessage);
 
         $this->assertEquals($replyMessage, $item->getReplyToMessage());
-        $this->assertInstanceOf('\TelegramBot\Api\Types\Message', $item->getReplyToMessage());
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\Message', $item->getReplyToMessage());
     }
 
     public function testSetViaBot()
@@ -631,7 +631,7 @@ class MessageTest extends \PHPUnit_Framework_TestCase
         ));
         $item->setViaBot($bot);
         $this->assertEquals($bot, $item->getViaBot());
-        $this->assertInstanceOf('\TelegramBot\Api\Types\User', $item->getViaBot());
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\User', $item->getViaBot());
     }
 
     public function testViaBotMessage()
@@ -696,7 +696,7 @@ class MessageTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($photo, $item->getPhoto());
 
         foreach ($item->getPhoto() as $photoItem) {
-            $this->assertInstanceOf('\TelegramBot\Api\Types\PhotoSize', $photoItem);
+            $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\PhotoSize', $photoItem);
         }
     }
 
@@ -732,12 +732,12 @@ class MessageTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($photo, $item->getNewChatPhoto());
 
         foreach ($item->getNewChatPhoto() as $photoItem) {
-            $this->assertInstanceOf('\TelegramBot\Api\Types\PhotoSize', $photoItem);
+            $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\PhotoSize', $photoItem);
         }
     }
 
     /**
-     * @expectedException \TelegramBot\Api\InvalidArgumentException
+     * @expectedException \Octisfall\TelegramBot\Api\InvalidArgumentException
      */
     public function testSetMessageIdException()
     {
@@ -746,7 +746,7 @@ class MessageTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \TelegramBot\Api\InvalidArgumentException
+     * @expectedException \Octisfall\TelegramBot\Api\InvalidArgumentException
      */
     public function testSetDateException()
     {
@@ -755,7 +755,7 @@ class MessageTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \TelegramBot\Api\InvalidArgumentException
+     * @expectedException \Octisfall\TelegramBot\Api\InvalidArgumentException
      */
     public function testSetForwardDateException()
     {

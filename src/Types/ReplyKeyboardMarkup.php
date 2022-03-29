@@ -1,14 +1,14 @@
 <?php
 
-namespace TelegramBot\Api\Types;
+namespace Octisfall\TelegramBot\Api\Types;
 
-use TelegramBot\Api\BaseType;
+use Octisfall\TelegramBot\Api\BaseType;
 
 /**
  * Class ReplyKeyboardMarkup
  * This object represents a custom keyboard with reply options (see Introduction to bots for details and examples).
  *
- * @package TelegramBot\Api\Types
+ * @package Octisfall\TelegramBot\Api\Types
  */
 class ReplyKeyboardMarkup extends BaseType
 {

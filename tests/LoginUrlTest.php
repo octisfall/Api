@@ -1,8 +1,8 @@
 <?php
 
-namespace TelegramBot\Api\Test;
+namespace Octisfall\TelegramBot\Api\Test;
 
-use TelegramBot\Api\Types\LoginUrl;
+use Octisfall\TelegramBot\Api\Types\LoginUrl;
 
 class LoginUrlTest extends \PHPUnit_Framework_TestCase
 {
@@ -47,7 +47,7 @@ class LoginUrlTest extends \PHPUnit_Framework_TestCase
             'request_write_access' => true
         ]);
 
-        $this->assertInstanceOf('\TelegramBot\Api\Types\LoginUrl', $loginUrl);
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\LoginUrl', $loginUrl);
         $this->assertEquals('https://telegram.org', $loginUrl->getUrl());
         $this->assertEquals('Log in!', $loginUrl->getForwardText());
         $this->assertEquals('TestBot', $loginUrl->getBotUsername());

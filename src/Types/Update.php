@@ -1,20 +1,20 @@
 <?php
 
-namespace TelegramBot\Api\Types;
+namespace Octisfall\TelegramBot\Api\Types;
 
-use TelegramBot\Api\BaseType;
-use TelegramBot\Api\TypeInterface;
-use TelegramBot\Api\Types\Inline\ChosenInlineResult;
-use TelegramBot\Api\Types\Inline\InlineQuery;
-use TelegramBot\Api\Types\Payments\Query\PreCheckoutQuery;
-use TelegramBot\Api\Types\Payments\Query\ShippingQuery;
+use Octisfall\TelegramBot\Api\BaseType;
+use Octisfall\TelegramBot\Api\TypeInterface;
+use Octisfall\TelegramBot\Api\Types\Inline\ChosenInlineResult;
+use Octisfall\TelegramBot\Api\Types\Inline\InlineQuery;
+use Octisfall\TelegramBot\Api\Types\Payments\Query\PreCheckoutQuery;
+use Octisfall\TelegramBot\Api\Types\Payments\Query\ShippingQuery;
 
 /**
  * Class Update
  * This object represents an incoming update.
  * Only one of the optional parameters can be present in any given update.
  *
- * @package TelegramBot\Api\Types
+ * @package Octisfall\TelegramBot\Api\Types
  */
 class Update extends BaseType implements TypeInterface
 {

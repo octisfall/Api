@@ -1,17 +1,17 @@
 <?php
 
-namespace TelegramBot\Api\Types\Inline;
+namespace Octisfall\TelegramBot\Api\Types\Inline;
 
-use TelegramBot\Api\BaseType;
-use TelegramBot\Api\Types\Location;
-use TelegramBot\Api\Types\User;
+use Octisfall\TelegramBot\Api\BaseType;
+use Octisfall\TelegramBot\Api\Types\Location;
+use Octisfall\TelegramBot\Api\Types\User;
 
 /**
  * Class InlineQuery
  * This object represents an incoming inline query.
  * When the user sends an empty query, your bot could return some default or trending results.
  *
- * @package TelegramBot\Api\Types
+ * @package Octisfall\TelegramBot\Api\Types
  */
 class InlineQuery extends BaseType
 {

@@ -1,22 +1,22 @@
 <?php
 
-namespace TelegramBot\Api;
+namespace Octisfall\TelegramBot\Api;
 
 use Closure;
 use ReflectionFunction;
-use TelegramBot\Api\Events\EventCollection;
-use TelegramBot\Api\Types\Update;
-use TelegramBot\Api\Types\Message;
-use TelegramBot\Api\Types\Inline\InlineKeyboardMarkup;
-use TelegramBot\Api\Types\ReplyKeyboardRemove;
-use TelegramBot\Api\Types\ForceReply;
-use TelegramBot\Api\Types\ReplyKeyboardHide;
-use TelegramBot\Api\Types\ReplyKeyboardMarkup;
+use Octisfall\TelegramBot\Api\Events\EventCollection;
+use Octisfall\TelegramBot\Api\Types\Update;
+use Octisfall\TelegramBot\Api\Types\Message;
+use Octisfall\TelegramBot\Api\Types\Inline\InlineKeyboardMarkup;
+use Octisfall\TelegramBot\Api\Types\ReplyKeyboardRemove;
+use Octisfall\TelegramBot\Api\Types\ForceReply;
+use Octisfall\TelegramBot\Api\Types\ReplyKeyboardHide;
+use Octisfall\TelegramBot\Api\Types\ReplyKeyboardMarkup;
 
 /**
  * Class Client
  *
- * @package TelegramBot\Api
+ * @package Octisfall\TelegramBot\Api
  * @method Message editMessageText(string $chatId, int $messageId, string $text, string $parseMode = null, bool $disablePreview = false, ReplyKeyboardMarkup|ReplyKeyboardHide|ForceReply|ReplyKeyboardRemove|InlineKeyboardMarkup|null $replyMarkup = null, string $inlineMessageId = null)
  */
 class Client
@@ -27,12 +27,12 @@ class Client
     const REGEXP = '/^(?:@\w+\s)?\/([^\s@]+)(@\S+)?\s?(.*)$/';
 
     /**
-     * @var \TelegramBot\Api\BotApi
+     * @var \Octisfall\TelegramBot\Api\BotApi
      */
     protected $api;
 
     /**
-     * @var \TelegramBot\Api\Events\EventCollection
+     * @var \Octisfall\TelegramBot\Api\Events\EventCollection
      */
     protected $events;
 
@@ -54,7 +54,7 @@ class Client
      * @param string $name
      * @param \Closure $action
      *
-     * @return \TelegramBot\Api\Client
+     * @return \Octisfall\TelegramBot\Api\Client
      */
     public function command($name, Closure $action)
     {
@@ -133,7 +133,7 @@ class Client
      * @param \Closure $event
      * @param \Closure|null $checker
      *
-     * @return \TelegramBot\Api\Client
+     * @return \Octisfall\TelegramBot\Api\Client
      */
     public function on(Closure $event, Closure $checker = null)
     {
@@ -150,7 +150,7 @@ class Client
     public function handle(array $updates)
     {
         foreach ($updates as $update) {
-            /* @var \TelegramBot\Api\Types\Update $update */
+            /* @var \Octisfall\TelegramBot\Api\Types\Update $update */
             $this->events->handle($update);
         }
     }
@@ -159,7 +159,7 @@ class Client
      * Webhook handler
      *
      * @return array
-     * @throws \TelegramBot\Api\InvalidJsonException
+     * @throws \Octisfall\TelegramBot\Api\InvalidJsonException
      */
     public function run()
     {

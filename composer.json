@@ -28,12 +28,12 @@
     },
     "autoload": {
         "psr-4": {
-            "TelegramBot\\Api\\": "src"
+            "Octisfall\\TelegramBot\\Api\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "TelegramBot\\Api\\Test\\": "tests"
+            "Octisfall\\TelegramBot\\Api\\Test\\": "tests"
         }
     },
     "scripts": {

@@ -1,6 +1,6 @@
 <?php
 
-namespace TelegramBot\Api\Collection;
+namespace Octisfall\TelegramBot\Api\Collection;
 
 interface CollectionItemInterface
 {

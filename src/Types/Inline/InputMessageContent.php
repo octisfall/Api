@@ -6,9 +6,9 @@
  * Time: 04:05
  */
 
-namespace TelegramBot\Api\Types\Inline;
+namespace Octisfall\TelegramBot\Api\Types\Inline;
 
-use TelegramBot\Api\BaseType;
+use Octisfall\TelegramBot\Api\BaseType;
 
 class InputMessageContent extends BaseType
 {

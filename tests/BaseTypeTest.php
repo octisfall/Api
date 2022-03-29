@@ -1,6 +1,6 @@
 <?php
 
-namespace TelegramBot\Api\Test;
+namespace Octisfall\TelegramBot\Api\Test;
 
 
 class BaseTypeTest extends \PHPUnit_Framework_TestCase
@@ -22,7 +22,7 @@ class BaseTypeTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \TelegramBot\Api\InvalidArgumentException
+     * @expectedException \Octisfall\TelegramBot\Api\InvalidArgumentException
      */
     public function testValidateFail() {
         $this->assertTrue(\TestBaseType::validate(array('test1' => 1)));

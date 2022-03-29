@@ -1,9 +1,9 @@
 <?php
 
-namespace TelegramBot\Api\Test\Types;
+namespace Octisfall\TelegramBot\Api\Test\Types;
 
-use TelegramBot\Api\Types\MessageEntity;
-use TelegramBot\Api\Types\User;
+use Octisfall\TelegramBot\Api\Types\MessageEntity;
+use Octisfall\TelegramBot\Api\Types\User;
 
 class MessageEntityTest extends \PHPUnit_Framework_TestCase
 {

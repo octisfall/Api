@@ -1,10 +1,10 @@
 <?php
 
-namespace TelegramBot\Api\Test\Types\Events;
+namespace Octisfall\TelegramBot\Api\Test\Types\Events;
 
-use TelegramBot\Api\Client;
-use TelegramBot\Api\Events\EventCollection;
-use TelegramBot\Api\Types\Update;
+use Octisfall\TelegramBot\Api\Client;
+use Octisfall\TelegramBot\Api\Events\EventCollection;
+use Octisfall\TelegramBot\Api\Types\Update;
 
 class EventCollectionTest extends \PHPUnit_Framework_TestCase
 {
@@ -55,7 +55,7 @@ class EventCollectionTest extends \PHPUnit_Framework_TestCase
     {
         $item = new EventCollection('testToken');
 
-        $this->assertAttributeInstanceOf('\TelegramBot\Api\Botan', 'tracker', $item);
+        $this->assertAttributeInstanceOf('\Octisfall\TelegramBot\Api\Botan', 'tracker', $item);
         $this->assertAttributeEmpty('events', $item);
     }
 
@@ -77,9 +77,9 @@ class EventCollectionTest extends \PHPUnit_Framework_TestCase
         $reflectionProperty->setAccessible(false);
 
         $this->assertAttributeInternalType('array', 'events', $item);
-        /* @var \TelegramBot\Api\Events\Event $event */
+        /* @var \Octisfall\TelegramBot\Api\Events\Event $event */
         foreach($innerItem as $event) {
-            $this->assertInstanceOf('\TelegramBot\Api\Events\Event', $event);
+            $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Events\Event', $event);
         }
     }
 
@@ -100,9 +100,9 @@ class EventCollectionTest extends \PHPUnit_Framework_TestCase
         $reflectionProperty->setAccessible(false);
 
         $this->assertAttributeInternalType('array', 'events', $item);
-        /* @var \TelegramBot\Api\Events\Event $event */
+        /* @var \Octisfall\TelegramBot\Api\Events\Event $event */
         foreach($innerItem as $event) {
-            $this->assertInstanceOf('\TelegramBot\Api\Events\Event', $event);
+            $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Events\Event', $event);
         }
     }
 
@@ -120,7 +120,7 @@ class EventCollectionTest extends \PHPUnit_Framework_TestCase
             return true;
         });
 
-        $mockedTracker = $this->getMockBuilder('\TelegramBot\Api\Botan')
+        $mockedTracker = $this->getMockBuilder('\Octisfall\TelegramBot\Api\Botan')
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -151,11 +151,11 @@ class EventCollectionTest extends \PHPUnit_Framework_TestCase
             return true;
         });
 
-        $mockedTracker = $this->getMockBuilder('\TelegramBot\Api\Botan')
+        $mockedTracker = $this->getMockBuilder('\Octisfall\TelegramBot\Api\Botan')
             ->disableOriginalConstructor()
             ->getMock();
 
-        $mockedEvent = $this->getMockBuilder('\TelegramBot\Api\Events\Event')
+        $mockedEvent = $this->getMockBuilder('\Octisfall\TelegramBot\Api\Events\Event')
             ->disableOriginalConstructor()
             ->getMock();
 

@@ -1,12 +1,12 @@
 <?php
 
-namespace TelegramBot\Api;
+namespace Octisfall\TelegramBot\Api;
 
 /**
  * Class BaseType
  * Base class for Telegram Types
  *
- * @package TelegramBot\Api
+ * @package Octisfall\TelegramBot\Api
  */
 abstract class BaseType
 {
@@ -89,7 +89,7 @@ abstract class BaseType
         if ($data === true) {
             return true;
         }
-        
+
         self::validate($data);
         $instance = new static();
         $instance->map($data);

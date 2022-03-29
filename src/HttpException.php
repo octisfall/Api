@@ -1,12 +1,12 @@
 <?php
 
-namespace TelegramBot\Api;
+namespace Octisfall\TelegramBot\Api;
 
 /**
  * Class HttpException
  *
  * @codeCoverageIgnore
- * @package TelegramBot\Api
+ * @package Octisfall\TelegramBot\Api
  */
 class HttpException extends Exception
 {

@@ -1,15 +1,15 @@
 <?php
 
-namespace TelegramBot\Api\Types;
+namespace Octisfall\TelegramBot\Api\Types;
 
-use TelegramBot\Api\BaseType;
+use Octisfall\TelegramBot\Api\BaseType;
 
 /**
  * Class ReplyKeyboardRemove
  * Upon receiving a message with this object,
  * Telegram clients will remove the current custom keyboard and display the default letter-keyboard.
  *
- * @package TelegramBot\Api\Types
+ * @package Octisfall\TelegramBot\Api\Types
  */
 class ReplyKeyboardRemove extends BaseType
 {

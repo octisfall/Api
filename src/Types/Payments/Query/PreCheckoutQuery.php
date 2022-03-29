@@ -1,18 +1,18 @@
 <?php
 
-namespace TelegramBot\Api\Types\Payments\Query;
+namespace Octisfall\TelegramBot\Api\Types\Payments\Query;
 
-use TelegramBot\Api\BaseType;
-use TelegramBot\Api\Types\Payments\ArrayOfLabeledPrice;
-use TelegramBot\Api\Types\Payments\OrderInfo;
-use TelegramBot\Api\Types\Payments\ShippingAddress;
-use TelegramBot\Api\Types\User;
+use Octisfall\TelegramBot\Api\BaseType;
+use Octisfall\TelegramBot\Api\Types\Payments\ArrayOfLabeledPrice;
+use Octisfall\TelegramBot\Api\Types\Payments\OrderInfo;
+use Octisfall\TelegramBot\Api\Types\Payments\ShippingAddress;
+use Octisfall\TelegramBot\Api\Types\User;
 
 /**
  * Class PreCheckoutQuery
  * This object contains information about an incoming pre-checkout query.
  *
- * @package TelegramBot\Api\Types\Payments\Query
+ * @package Octisfall\TelegramBot\Api\Types\Payments\Query
  */
 class PreCheckoutQuery extends BaseType
 {

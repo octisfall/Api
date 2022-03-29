@@ -1,11 +1,11 @@
 <?php
 
-namespace TelegramBot\Api\Test\Types;
+namespace Octisfall\TelegramBot\Api\Test\Types;
 
-use TelegramBot\Api\Collection\CollectionItemInterface;
-use TelegramBot\Api\Collection\ReachedMaxSizeException;
-use TelegramBot\Api\Types\InputMedia\ArrayOfInputMedia;
-use TelegramBot\Api\Types\InputMedia\InputMediaPhoto;
+use Octisfall\TelegramBot\Api\Collection\CollectionItemInterface;
+use Octisfall\TelegramBot\Api\Collection\ReachedMaxSizeException;
+use Octisfall\TelegramBot\Api\Types\InputMedia\ArrayOfInputMedia;
+use Octisfall\TelegramBot\Api\Types\InputMedia\InputMediaPhoto;
 
 class CollectionTest extends \PHPUnit_Framework_TestCase
 {

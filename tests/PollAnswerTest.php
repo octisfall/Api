@@ -1,9 +1,9 @@
 <?php
 
-namespace TelegramBot\Api\Test;
+namespace Octisfall\TelegramBot\Api\Test;
 
-use TelegramBot\Api\Types\PollAnswer;
-use TelegramBot\Api\Types\User;
+use Octisfall\TelegramBot\Api\Types\PollAnswer;
+use Octisfall\TelegramBot\Api\Types\User;
 
 class PollAnswerAnswerTest extends \PHPUnit_Framework_TestCase
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace TelegramBot\Api\Test;
+namespace Octisfall\TelegramBot\Api\Test;
 
 
-use TelegramBot\Api\Types\PhotoSize;
-use TelegramBot\Api\Types\UserProfilePhotos;
+use Octisfall\TelegramBot\Api\Types\PhotoSize;
+use Octisfall\TelegramBot\Api\Types\UserProfilePhotos;
 
 class UserProfilePhotosTest extends \PHPUnit_Framework_TestCase
 {
@@ -83,18 +83,18 @@ class UserProfilePhotosTest extends \PHPUnit_Framework_TestCase
                 ))
             )
         );
-        $this->assertInstanceOf('\TelegramBot\Api\Types\UserProfilePhotos', $userProfilePhotos);
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\UserProfilePhotos', $userProfilePhotos);
         $this->assertAttributeEquals(1, 'totalCount', $userProfilePhotos);
         $this->assertAttributeEquals($photos, 'photos', $userProfilePhotos);
         foreach ($userProfilePhotos->getPhotos() as $photoArray) {
             foreach($photoArray as $photo) {
-                $this->assertInstanceOf('\TelegramBot\Api\Types\PhotoSize', $photo);
+                $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\PhotoSize', $photo);
             }
         }
     }
 
     /**
-     * @expectedException \TelegramBot\Api\InvalidArgumentException
+     * @expectedException \Octisfall\TelegramBot\Api\InvalidArgumentException
      */
     public function testSetTotalCountException()
     {

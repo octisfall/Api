@@ -6,17 +6,17 @@
  * Time: 15:41
  */
 
-namespace TelegramBot\Api\Types\Inline\InputMessageContent;
+namespace Octisfall\TelegramBot\Api\Types\Inline\InputMessageContent;
 
-use TelegramBot\Api\TypeInterface;
-use TelegramBot\Api\Types\Inline\InputMessageContent;
+use Octisfall\TelegramBot\Api\TypeInterface;
+use Octisfall\TelegramBot\Api\Types\Inline\InputMessageContent;
 
 /**
  * Class Location
  * @see https://core.telegram.org/bots/api#inputlocationmessagecontent
  * Represents the content of a location message to be sent as the result of an inline query.
  *
- * @package TelegramBot\Api\Types\Inline
+ * @package Octisfall\TelegramBot\Api\Types\Inline
  */
 class Location extends InputMessageContent implements TypeInterface
 {

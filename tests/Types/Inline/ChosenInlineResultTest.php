@@ -1,9 +1,9 @@
 <?php
 
-namespace TelegramBot\Api\Test\Types\Inline;
+namespace Octisfall\TelegramBot\Api\Test\Types\Inline;
 
-use TelegramBot\Api\Types\Inline\ChosenInlineResult;
-use TelegramBot\Api\Types\User;
+use Octisfall\TelegramBot\Api\Types\Inline\ChosenInlineResult;
+use Octisfall\TelegramBot\Api\Types\User;
 
 class ChosenInlineResultTest extends \PHPUnit_Framework_TestCase
 {
@@ -24,14 +24,14 @@ class ChosenInlineResultTest extends \PHPUnit_Framework_TestCase
 
         $user = User::fromResponse($this->chosenInlineResultFixture['from']);
 
-        $this->assertInstanceOf('\TelegramBot\Api\Types\Inline\ChosenInlineResult', $item);
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\Inline\ChosenInlineResult', $item);
         $this->assertEquals($this->chosenInlineResultFixture['result_id'], $item->getResultId());
         $this->assertEquals($user, $item->getFrom());
         $this->assertEquals($this->chosenInlineResultFixture['query'], $item->getQuery());
     }
 
     /**
-     * @expectedException \TelegramBot\Api\InvalidArgumentException
+     * @expectedException \Octisfall\TelegramBot\Api\InvalidArgumentException
      */
     public function testFromResponseException1() {
         unset($this->chosenInlineResultFixture['result_id']);
@@ -39,7 +39,7 @@ class ChosenInlineResultTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \TelegramBot\Api\InvalidArgumentException
+     * @expectedException \Octisfall\TelegramBot\Api\InvalidArgumentException
      */
     public function testFromResponseException2() {
         unset($this->chosenInlineResultFixture['from']);
@@ -47,7 +47,7 @@ class ChosenInlineResultTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \TelegramBot\Api\InvalidArgumentException
+     * @expectedException \Octisfall\TelegramBot\Api\InvalidArgumentException
      */
     public function testFromResponseException3() {
         unset($this->chosenInlineResultFixture['query']);

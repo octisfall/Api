@@ -1,8 +1,8 @@
 <?php
 
-namespace TelegramBot\Api\Test;
+namespace Octisfall\TelegramBot\Api\Test;
 
-use TelegramBot\Api\Types\Location;
+use Octisfall\TelegramBot\Api\Types\Location;
 
 class LocationTest extends \PHPUnit_Framework_TestCase
 {
@@ -102,7 +102,7 @@ class LocationTest extends \PHPUnit_Framework_TestCase
                 'proximity_alert_radius' => 15
             )
         );
-        $this->assertInstanceOf('\TelegramBot\Api\Types\Location', $location);
+        $this->assertInstanceOf('\Octisfall\TelegramBot\Api\Types\Location', $location);
         $this->assertAttributeEquals(55.585827, 'latitude', $location);
         $this->assertAttributeEquals(37.675309, 'longitude', $location);
         $this->assertAttributeEquals(20.5, 'horizontalAccuracy', $location);
@@ -112,7 +112,7 @@ class LocationTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \TelegramBot\Api\InvalidArgumentException
+     * @expectedException \Octisfall\TelegramBot\Api\InvalidArgumentException
      */
     public function testSetHorizontalAccuracyException()
     {
@@ -121,7 +121,7 @@ class LocationTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \TelegramBot\Api\InvalidArgumentException
+     * @expectedException \Octisfall\TelegramBot\Api\InvalidArgumentException
      */
     public function testSetLatitudeException()
     {
@@ -130,7 +130,7 @@ class LocationTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \TelegramBot\Api\InvalidArgumentException
+     * @expectedException \Octisfall\TelegramBot\Api\InvalidArgumentException
      */
     public function testSetLongitudeException()
     {

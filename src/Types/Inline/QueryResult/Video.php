@@ -1,15 +1,15 @@
 <?php
 
-namespace TelegramBot\Api\Types\Inline\QueryResult;
+namespace Octisfall\TelegramBot\Api\Types\Inline\QueryResult;
 
-use TelegramBot\Api\Types\Inline\InlineKeyboardMarkup;
-use TelegramBot\Api\Types\Inline\InputMessageContent;
+use Octisfall\TelegramBot\Api\Types\Inline\InlineKeyboardMarkup;
+use Octisfall\TelegramBot\Api\Types\Inline\InputMessageContent;
 
 /**
  * Class InlineQueryResultVideo
  * Represents link to a page containing an embedded video player or a video file.
  *
- * @package TelegramBot\Api\Types\Inline
+ * @package Octisfall\TelegramBot\Api\Types\Inline
  */
 class Video extends AbstractInlineQueryResult
 {
@@ -136,7 +136,7 @@ class Video extends AbstractInlineQueryResult
         $inlineKeyboardMarkup = null
     ) {
         parent::__construct($id, $title, $inputMessageContent, $inlineKeyboardMarkup);
-        
+
         $this->videoUrl = $videoUrl;
         $this->thumbUrl = $thumbUrl;
         $this->caption = $caption;
